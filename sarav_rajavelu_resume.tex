@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\projectSubheading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Sarav Rajavelu}} & Email : \href{mailto:rajavelu.1@osu.edu}{rajavelu.1@osu.edu}\\
+  \href{https://github.com/saravrajavelu}{https://github.com/saravrajavelu} & Mobile : +1-614-286-1199 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Ohio State University}{Columbus, OH}
+      {Master of Science in Computer Science;  GPA: 4.0  /4.0}{Aug. 2017 --May. 2019}
+    \resumeSubheading
+      {Vellore Institute of Technology}{Vellore, India}
+      {Bachelor of Technology in Computer Science and Engineering;  GPA: 8.23 /10.0}{Aug. 2011 -- May. 2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+%% Emplay Analytics 
+    \resumeSubheading
+      {Emplay Analytics}{Bangalore, India}
+      {Analytics Consultant}{Jun. 2016 - Jun. 2017}
+      \resumeItemListStart
+	\item
+          {Developed innovative data driven, action recommendations to help sales representatives predictably meet their sales
+quota and improve sales in the B2B domain.}
+        \item
+          {Solved business problems such as lead classification, forecasting the probability of a sales, performance forecasting of
+sales teams and sales representative performance coaching using R.}
+	\item
+          {Designed algorithms using classification trees and regression models to provide prescriptive solutions.}
+      \resumeItemListEnd
+
+
+
+%% Deloitte Consulting
+    \resumeSubheading
+      {Deloitte Consulting}{Bangalore, India}
+      {Business Technology Analyst}{Aug. 2015 - May. 2016}
+      \resumeItemListStart
+	\item
+          {Developed interfaces for Data Processing, Data Conversion and Inbound and Outbound migration of Data using SQL,
+SSIS, SQL Jobs and Batch Files for use through the CRM Software Application – Siebel.}
+        \item
+          {Worked on large scale migration of patient records and pharmaceutical data.}
+	\item
+          {Developed processes to detect inconsistencies in data, creating error logs and reporting them to the client.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The Ohio State University}{Columbus, OH}
+      {Teaching Assistant}{Jan. 2018 - May. 2018}
+      \resumeItemListStart
+        \resumeItem{CSE 2111 Spreadsheets and Databases}
+          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+      \resumeItemListEnd
+ \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+
+
+	\resumeSubHeadingListStart
+
+%% Sentiment in Football Tweets
+		\projectSubheading
+ 		{Sentiment in Football Tweets}{Jun. 2016 - Jul. 2016}
+			\resumeItemListStart
+				\item
+				{Developed an algorithm to track the sentiment in Tweets relating to a football game using NLP.}
+				\item
+				{The sentiment score at each minute of the game was calculated by aggregating all Tweets extracted at that minute, using a sentiment dictionary to assign a score to each Tweet.}
+				\item
+				{The calculated sentiment score at each minute was used to plot a ‘sentiment score versus game time’ graph to study the correlation between spikes in the graph with an event in the game.}
+		      \resumeItemListEnd
+ 	
+%% Feature Based Review Summarization
+		\projectSubheading
+ 		{Feature Based Review Summarization}{ Dec. 2014 – Mar. 2015}
+			\resumeItemListStart
+				\item
+				{Developed an algorithm to produce a feature-based scoring of a product using the customer feedback received.}
+				\item
+				{Designed a web scraper to build a sentiment dictionary using a seed word and word-synonym based approach.}
+				\item
+				{The algorithm scores each individual feature of the product that is mentioned in the reviews on a scale of 0-5.}
+		      \resumeItemListEnd
+
+	\resumeSubHeadingListEnd
+
+% Need to do this
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{QuantSoftware Toolkit}
+%      {Open source python library for financial data analysis and machine learning for finance.}
+%    \resumeSubItem{Github Visualization}
+%      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%    \resumeSubItem{Recommendation System}
+%      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%    \resumeSubItem{Mac Setup}
+%      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{\textbf{Languages}{: Python, R, SQL}}
+    \item{\textbf{Technologies}{: R Studio, SQL Server Integration Services, Informatica PowerCenter}}
+    \item{\textbf{Technical coursework}{: Algorithms, Data Mining, Artificial Intelligence, Database Systems}}
+    \item{\textbf{Certifications}{: R Programming – Statement of Accomplishment with Distinction, Coursera}}
+
+
+  \resumeSubHeadingListEnd
+
+
+%--------Awards------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \item{\textbf{High 5 Award for Exemplary Employee Performance}{: Emplay Analytics, 3rd Quarter of 2016}}
+    \item{\textbf{Applause Award for Outstanding Performance}{: Deloitte Consulting, November 2015}}
+
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
