@@ -49,6 +49,13 @@
   }
 }
 
+\newcommand{\resumeItemLink}[3]{
+  \item\small{
+   % \textbf{\href{#1}{#2}}{: #3 \vspace{-2pt}}
+    \textbf{\href{#1}{\small #2}}{: #3 \vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -81,8 +88,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://sourabhbajaj.com/}{\Large Sarav Rajavelu}} & Email : \href{mailto:rajavelu.1@osu.edu}{rajavelu.1@osu.edu}\\
-  \href{https://github.com/saravrajavelu}{https://github.com/saravrajavelu} & Mobile : +1-614-286-1199 \\
+  \textbf{\href{}{\Large Sarav Rajavelu}} & Email : \href{mailto:rajavelu.1@osu.edu}{rajavelu.1@osu.edu}\\
+  \href{https://github.com/saravrajavelu}{github.com/saravrajavelu}  \textbullet\,  \href{https://www.linkedin.com/in/saravrajavelu/}{linkedin.com/in/saravrajavelu} & Mobile : +1-614-286-1199 \\
 \end{tabular*}
 
 
@@ -95,6 +102,28 @@
     \resumeSubheading
       {Vellore Institute of Technology}{Vellore, India}
       {Bachelor of Technology in Computer Science and Engineering;  GPA: 8.23 /10.0}{Aug. 2011 -- May. 2015}
+  \resumeSubHeadingListEnd
+
+% Need to do this
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{QuantSoftware Toolkit}
+%      {Open source python library for financial data analysis and machine learning for finance.}
+%    \resumeSubItem{Github Visualization}
+%      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%    \resumeSubItem{Recommendation System}
+%      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%    \resumeSubItem{Mac Setup}
+%      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Python (scikit-learn, NumPy, SciPy, Pandas), R, SQL, SQL Server}
+    \resumeSubItem{Technologies}{R Studio, SQL Server Integration Services, Informatica PowerCenter}
+    \resumeSubItem{Coursework}{Artificial Intelligence, Data Mining, Social Media \& Text Analytics, Database Systems, Algorithms}
+    \resumeSubItem{Technical}{Machine Learning (Classification, Regression, Feature Engineering), Deep Learning, Natural Language Processing, Data Visualization, Data Scraping}
+    \resumeSubItem{Certifications}{R Programming – Statement of Accomplishment with Distinction, Coursera}
   \resumeSubHeadingListEnd
 
 
@@ -111,7 +140,7 @@
           {Developed innovative data driven, action recommendations to help sales representatives predictably meet their sales
 quota and improve sales in the B2B domain.}
         \item
-          {Solved business problems such as lead classification, forecasting the probability of a sales, performance forecasting of
+{Solved business problems such as lead classification, forecasting the probability of a sales, performance forecasting of
 sales teams and sales representative performance coaching using R.}
 	\item
           {Designed algorithms using classification trees and regression models to provide prescriptive solutions.}
@@ -127,18 +156,20 @@ sales teams and sales representative performance coaching using R.}
 	\item
           {Developed interfaces for Data Processing, Data Conversion and Inbound and Outbound migration of Data using SQL,
 SSIS, SQL Jobs and Batch Files for use through the CRM Software Application – Siebel.}
-        \item
-          {Worked on large scale migration of patient records and pharmaceutical data.}
+%        \item
+%          {Worked on large scale migration of patient records and pharmaceutical data.}
 	\item
           {Developed processes to detect inconsistencies in data, creating error logs and reporting them to the client.}
       \resumeItemListEnd
 
+%% OhioState
     \resumeSubheading
       {The Ohio State University}{Columbus, OH}
-      {Teaching Assistant}{Jan. 2018 - May. 2018}
+      {Graduate Teaching Assistant}{Jan. 2018 - May. 2018}
       \resumeItemListStart
         \resumeItem{CSE 2111 Spreadsheets and Databases}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+	{Lab Instructor for the undergraduate course that taught spreadsheet and database modeling, programming concepts and techniques to solve business related problems.}
+	%https://cse.osu.edu/courses/modeling-and-problem-solving-spreadsheets-and-databases-2111.}
       \resumeItemListEnd
  \resumeSubHeadingListEnd
 
@@ -146,7 +177,6 @@ SSIS, SQL Jobs and Batch Files for use through the CRM Software Application – 
 
 %-----------PROJECTS-----------------
 \section{Projects}
-
 
 	\resumeSubHeadingListStart
 
@@ -156,8 +186,8 @@ SSIS, SQL Jobs and Batch Files for use through the CRM Software Application – 
 			\resumeItemListStart
 				\item
 				{Developed an algorithm to track the sentiment in Tweets relating to a football game using NLP.}
-				\item
-				{The sentiment score at each minute of the game was calculated by aggregating all Tweets extracted at that minute, using a sentiment dictionary to assign a score to each Tweet.}
+%				\item
+%				{The sentiment score at each minute of the game was calculated by aggregating all Tweets extracted at that minute, using a sentiment dictionary to assign a score to each Tweet.}
 				\item
 				{The calculated sentiment score at each minute was used to plot a ‘sentiment score versus game time’ graph to study the correlation between spikes in the graph with an event in the game.}
 		      \resumeItemListEnd
@@ -167,45 +197,34 @@ SSIS, SQL Jobs and Batch Files for use through the CRM Software Application – 
  		{Feature Based Review Summarization}{ Dec. 2014 – Mar. 2015}
 			\resumeItemListStart
 				\item
-				{Developed an algorithm to produce a feature-based scoring of a product using the customer feedback received.}
-				\item
-				{Designed a web scraper to build a sentiment dictionary using a seed word and word-synonym based approach.}
-				\item
-				{The algorithm scores each individual feature of the product that is mentioned in the reviews on a scale of 0-5.}
+				{Developed an algorithm to produce a feature-based scoring of a product using the customer feedback.}
+%				\item
+%				{Designed a web scraper to build a sentiment dictionary using a seed word and word-synonym based approach.}
+%				\item
+%				{The algorithm scores each individual feature of the product that is mentioned in the reviews on a scale of 0-5.}
+		      \resumeItemListEnd
+
+%%Exploratory Data Analysis \& Classification
+		\projectSubheading
+ 		{Exploratory Data Analysis \& Classification }{}
+			\resumeItemListStart
+				\resumeItemLink{https://github.com/saravrajavelu/LogisticRegression}{Logistic Regression}
+    				 {Built using NumPy to predict whether a student will be admitted to a unversity or not.}
+				\resumeItemLink{https://github.com/saravrajavelu/TwitterLanguageMix}{Twitter Lang Mix}
+    				 {Analysis of the spread of languages, emojis and comparison of \href{https://github.com/saffsd/langid.py}{LangID} vs Twitter's Lang ID.}
+				\resumeItemLink{https://github.com/saravrajavelu/Adult-Income-Analysis}{Adult Income}
+    				 {Analysis and comparison of classifiers like Neural Nets, SVM, Decision Trees and Adaboost.}
 		      \resumeItemListEnd
 
 	\resumeSubHeadingListEnd
 
-% Need to do this
-%  \resumeSubHeadingListStart
-%    \resumeSubItem{QuantSoftware Toolkit}
-%      {Open source python library for financial data analysis and machine learning for finance.}
-%    \resumeSubItem{Github Visualization}
-%      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-%    \resumeSubItem{Recommendation System}
-%      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-%    \resumeSubItem{Mac Setup}
-%      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
-%  \resumeSubHeadingListEnd
-
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-  \resumeSubHeadingListStart
-    \item{\textbf{Languages}{: Python, R, SQL}}
-    \item{\textbf{Technologies}{: R Studio, SQL Server Integration Services, Informatica PowerCenter}}
-    \item{\textbf{Technical coursework}{: Algorithms, Data Mining, Artificial Intelligence, Database Systems}}
-    \item{\textbf{Certifications}{: R Programming – Statement of Accomplishment with Distinction, Coursera}}
-
-
-  \resumeSubHeadingListEnd
 
 
 %--------Awards------------
 \section{Awards}
   \resumeSubHeadingListStart
-    \item{\textbf{High 5 Award for Exemplary Employee Performance}{: Emplay Analytics, 3rd Quarter of 2016}}
-    \item{\textbf{Applause Award for Outstanding Performance}{: Deloitte Consulting, November 2015}}
-
+    \resumeSubItem{High 5 Award for Exemplary Employee Performance}{Emplay Analytics, 3rd Quarter of 2016}
+    \resumeSubItem{Applause Award for Outstanding Performance}{Deloitte Consulting, November 2015}
   \resumeSubHeadingListEnd
 
 
